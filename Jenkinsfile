@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test'){
             steps{
-                git url: 'https://github.com/pavankumar0405/react_django_demo_app.git', branch: 'main'
+                sh 'docker run todo-app-test:latest pytest'
             }
         }
         stage('Deploy'){
