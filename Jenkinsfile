@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test'){
             steps{
-                git url: 'https://github.com/pavankumar0405/react_django_demo_app.git/tests/test_foo.py', branch: 'imain'
+                git url: 'https://github.com/pavankumar0405/react_django_demo_app.git/tests/test_foo.py', branch: 'main'
             }
         }
         stage('Deploy'){
