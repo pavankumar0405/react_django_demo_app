@@ -2,6 +2,7 @@ version: '3.9'
 
 services:
   web:
+   image: 'todo-app-test:latest'
     build: .
     ports:
       - "8001:8001"
